@@ -24,5 +24,10 @@ namespace newProject
         {
             InitializeComponent();
         }
+
+        private void btnClickMe_Click(object sender, RoutedEventArgs e)
+        {
+            lblResult.Content = "Hello World!";
+        }
     }
 }
