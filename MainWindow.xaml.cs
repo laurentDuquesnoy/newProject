@@ -24,5 +24,25 @@ namespace newProject
         {
             InitializeComponent();
         }
+        public int Counter = 0;
+        private void WindowLoaded(object sender, RoutedEventArgs e)
+        {
+            lblCounter.Content = Counter;
+        }   
+        
+        
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Counter++;
+            lblCounter.Content = Counter;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Counter--;
+            lblCounter.Content = Counter;
+        }
     }
 }
